@@ -11,7 +11,7 @@ Made with [Svelte](https://svelte.dev).
 
 ## Screenshot
 
-<img width="359" alt="image" src="https://user-images.githubusercontent.com/130651/202879276-c7558721-2f69-4a3c-8110-a515b6fc6729.png">
+<img width="537" height="662" alt="image" src="https://github.com/user-attachments/assets/e88b55f1-5f58-4a4b-a41d-f3b21b196e3d" />
 
 ## Installation
 
