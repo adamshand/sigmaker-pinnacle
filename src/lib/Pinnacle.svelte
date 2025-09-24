@@ -4,6 +4,7 @@
   export let name
   export let title
   export let phone
+  export let email
 
   // images must load remotely from an absolute URL to be reliable
   export const imagesBaseUrl =
@@ -21,12 +22,14 @@
         <table style={fonts} cellspacing="0" cellpadding="0">
           <tbody>
             <tr>
-              <td style="vertical-align: top">
+              <td style="vertical-align: top;">
+                <br />
+                <br />
                 <img
                   src={logoUrl}
                   role="presentation"
-                  style="display: block; max-width: 170px"
-                  width="170"
+                  style="display: block; max-width: 200px"
+                  width="200"
                   alt="" />
               </td>
               <!-- <td style="padding-left: 29px; border-right: 1px solid #8EA5C7;">
@@ -42,7 +45,9 @@
                     font-weight: 600;
                     line-height: 30px;
                   ">
-                  {name.toUpperCase()}
+                  <!-- replace spaces with non-breaking spaces 
+                       don't use &nbps; because requires @html -->
+                  {name.toUpperCase().replace(/ /g, '\u00A0')}
                 </h2>
                 <p
                   color="#0C0732"
@@ -73,12 +78,33 @@
                   style="
                     margin: 0px;
                     color: #0C0732;
-                    font-size: 14pt;
+                    font-size: 13pt;
                     font-weight: 600;
                     line-height: 25px;
                   ">
-                  {phone}
+                  <a
+                    style="text-decoration: none; font-weight: 400; color: #467886;"
+                    href={`tel:${phone}`}>
+                    {phone}
+                  </a>
                 </p>
+
+                <p
+                  color="#0C0732"
+                  style="
+                    margin: 0px;
+                    color: #0C0732;
+                    font-size: 13pt;
+                    font-weight: 600;
+                    line-height: 25px;
+                  ">
+                  <a
+                    style="text-decoration: none; font-weight: 400; color: #467886;"
+                    href={`mailto:${email.toLowerCase()}`}>
+                    {email.toLowerCase()}
+                  </a>
+                </p>
+
                 <p
                   style="
                     margin: 0px;

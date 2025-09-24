@@ -38,7 +38,7 @@
   <div id="wrapper">
     <center>
       <div bind:this={signature}>
-        <Pinnacle {name} {title} {phone} />
+        <Pinnacle {name} {title} {phone} {email} />
         <!-- {#if template === 'inkfish'}
           <Inkfish {name} {title} {phone} />
         {:else if template === 'rocinante'}
@@ -65,8 +65,8 @@
         <input type="text" name="name" bind:value={name} />
         <label for="title">Title</label>
         <input type="text" name="title" bind:value={title} />
-        <!-- <label for="email">Email</label>
-          <input type="text" name="email" bind:value={email} /> -->
+        <label for="email">Email</label>
+        <input type="text" name="email" bind:value={email} />
         <label for="phone">Phone</label>
         <input type="text" name="phone" bind:value={phone} />
 
