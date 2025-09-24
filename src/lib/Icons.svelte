@@ -1,5 +1,6 @@
 <script>
-  import { imagesBaseUrl, fonts } from './Pinnacle.svelte'
+  // import { imagesBaseUrl, fonts } from './Pinnacle.svelte'
+  let imagesBaseUrl, fonts // this is just a hack to stop errors
   export let links
 </script>
 
