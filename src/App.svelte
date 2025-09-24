@@ -10,7 +10,7 @@
   let template = urlParams.get('template') ?? 'pinnacle'
 
   // doesn't save to URL
-  let instructions = urlParams.get('instructions') ?? 'emclient'
+  let instructions = urlParams.get('instructions') ?? 'mail_macos'
 
   let buttonMessage = 'Copy Signature'
 
@@ -54,13 +54,17 @@
 
     <div id="form">
       <form>
+        <input type="hidden" name="template" bind:value={template} />
+
+        <!-- disabled since only single choice
         <label for="template">Template</label>
         <select bind:value={template} name="template">
           <option value="pinnacle">Pinnacle</option>
-          <!-- <option value="inkfish">Inkfish</option> />
+          <option value="inkfish">Inkfish</option> />
           <option value="rocinante">Rocinante</option> />
-          <option value="sportsfisher">Sportsfisher</option> /> -->
+          <option value="sportsfisher">Sportsfisher</option> /> 
         </select>
+        -->
         <label for="name">Name</label>
         <input type="text" name="name" bind:value={name} />
         <label for="title">Title</label>

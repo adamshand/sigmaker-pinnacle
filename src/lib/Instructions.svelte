@@ -126,11 +126,12 @@
       </ol>
       <i
         >Note: This only partially works, it will look correct but none of the
-        links will work. Instructions for a fully functional signature are <a
+        links will work. Instructions for a fully functional signature are
+        <a
           href="https://www.success-trending.club/2022/01/add-email-signature-mac-mail.html">
-          available here</a
-        >. If you'd like assistance please contact
-        <a href="mailto:support@ink.fish">support@krakenfleet.co</a>.</i>
+          available here
+        </a>.
+      </i>
     {:else if instructions === 'fastmail_web'}
       <ol>
         <li>
